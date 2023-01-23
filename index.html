@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer src="encrypt.js"></script>
+    <title>Alura Encryptor</title>
+  </head>
+  <body>      
+    <header>
+        <h1>
+            <img id="logo-pic" src="/images/Logo-Alura.png" alt="Logo Alura" />
+        </h1>
+    </header>
+    <main>
+        <div id="input-area">
+            <textarea
+                name="text-input"
+                id="text-input"
+                rows="22"
+                cols="10"
+                placeholder="Ingrese el texto aqui"
+            ></textarea>
+            <p>&#9888 Solo letras minúsculas y sin acentos</p>
+            <div id="modal-box"></div>
+            <fieldset>
+                <input type="submit" id="encriptar" value="Encriptar" />
+                <input type="submit" id="desencriptar" value="Desencriptar" />
+            </fieldset>
+           
+        </div>
+        <fieldset id="output-area">
+                <textarea name="output" id="output" cols="10" rows="21" placeholder="Ningún mensaje fue encontrado."></textarea>
+                <input id="boton-copiar" type="submit" value="Copiar" />
+                <p id="mensaje-output-area">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </fieldset>
+    </main>    
+    <footer>
+        <p>&#169 Copyright Alura</p>
+        <p>Elaborado por Samir Alexander Diaz Garcia</p>
+        <p>2023</p>
+    </footer>
+  
+  </body>
+</html>
